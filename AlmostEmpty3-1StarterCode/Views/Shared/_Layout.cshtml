@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    @*<title>@ViewBag.Title</title>*@
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>My First MVC Website</h1>
+    
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <br />
+        <a asp-controller="Home" asp-action="About">About</a>
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy;@DateTime.Today.Year Joe's Website</p>
+    </footer>
+</body>
+</html>
