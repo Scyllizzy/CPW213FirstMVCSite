@@ -8,20 +8,22 @@
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>My First MVC Website</h1>
-    
-    <nav>
-        <a asp-controller="Home" asp-action="Index">Home</a>
-        <br />
-        <a asp-controller="Home" asp-action="About">About</a>
-    </nav>
+    <h1 class="title">Welcome To A Website About Me!</h1>
 
     <main>
         @RenderBody()
     </main>
 
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <br />
+        <a asp-controller="Home" asp-action="About">About</a>
+        <br />
+        <a asp-controller="Home" asp-action="Contact">Contact</a>
+    </nav>
+
     <footer>
-        <p>&copy;@DateTime.Today.Year Joe's Website</p>
+        <p>&copy;@DateTime.Today.Year Scyllizzy's Website</p>
     </footer>
 </body>
 </html>
